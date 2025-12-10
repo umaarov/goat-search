@@ -40,7 +40,7 @@ GOAT Search runs as a background service (`bin/goat-daemon`). Your PHP applicati
 
 ### Install via Composer
 ```bash
-composer require umaarov/goat-search-backup
+composer require umaarov/goat-search
 ```
 *The installation process will automatically compile the C++ source code into a binary executable.*
 
@@ -117,7 +117,7 @@ If you prefer running GOAT as a microservice:
 services:
   goat-search:
     build: 
-      context: ./vendor/umaarov/goat-search-backup
+      context: ./vendor/umaarov/goat-search
     ports:
       - "9999:9999"
     restart: always
